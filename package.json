@@ -1,0 +1,26 @@
+{
+  "name": "mytest",
+  "version": "1.0.0",
+  "description": "自己的练习",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node  ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ColorfulCarbon/myTest.git"
+  },
+  "author": "Carbon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ColorfulCarbon/myTest/issues"
+  },
+  "homepage": "https://github.com/ColorfulCarbon/myTest#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "mysql": "^2.16.0"
+  }
+}
