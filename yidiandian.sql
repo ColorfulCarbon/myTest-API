@@ -69,19 +69,19 @@ INSERT INTO ydd_reservation VALUES
 (NULL, 'lala', '13501234562', '1548311770000', '1549011700000', '5'),
 (NULL, 'qiqi', '13501234563', '1548311780000', '1549011800000', '6'),
 (NULL, 'bibi', '13501234564', '1548311790000', '1549011900000', '6'),
-(NULL, 'lili', '13501234565', '1548311800000', '1549011000000', '7'),
+(NULL, 'lili', '13501234565', '1548311800000', '1549011000000', '7');
 
 
 /*菜品类别*/
 CREATE TABLE ydd_category(
   cid INT PRIMARY KEY AUTO_INCREMENT,
-  cname VARCHAR(32)
+  cname VARCHAR(12)
 );
 INSERT INTO ydd_category VALUES
 (1, '找好茶'),
 (2, '找口感'),
 (3, '找奶茶'),
-(4, '找新鲜'),
+(4, '找新鲜');
 
 
 /*菜品*/
@@ -122,7 +122,7 @@ CREATE TABLE ydd_order(
   endTime BIGINT,
   customerCount INT,
   tableId INT,
-  FOREIGN KEY(tableId) REFERENCES xfn_table(tid)
+  FOREIGN KEY(tableId) REFERENCES ydd_table(tid)
 );
 INSERT INTO ydd_order VALUES
 (100000, '1547800000000', '1547814918000', '2', '1'),
@@ -182,5 +182,5 @@ INSERT INTO ydd_order_detail VALUES
 (NULL, '1', '2', '提尔', '100007'),
 (NULL, '3', '2', '世界萨', '100008'),
 (NULL, '5', '2', '阿强', '100009'),
-(NULL, '4', '1', '凯子', '100010'),
+(NULL, '4', '1', '凯子', '100010');
 
