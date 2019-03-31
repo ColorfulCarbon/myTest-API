@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Document</title>
+</head>
+<body>
+ <button id="bt1">获取所有菜品</button>
+ <button id="bt2">获取某一道菜品</button>
+ <button id="bt3">异步上传菜品图片</button>
+ <button id="bt4">添加</button>
+ <button id="bt5">删除</button>
+ <button id="bt6">修改</button>
+ <script src="axios.min.js"></script>
+ <script>
+  bt1.onclick=function(){
+   axios.get('http://127.0.0.1:9600/admin/dish').then((res)=>{
+    console.log(res.data);
+   }).catch((err)=>{
+    console.log(err);
+   })
+  }
+  // bt3.onclick=function(){
+  //  axios.
+  // }
+ </script>
+
+ <hr>
+ <h3>文件上传</h3>
+ <form action="http://127.0.0.1:9600/admin/dish/image" method='POST' enctype="multipart/form-data">
+  <input type="file" name='dishImg'><br>
+  <input type="text" name="description">
+  <input type="submit">
+ </form>
+</body>
+</html>
