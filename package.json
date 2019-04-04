@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ColorfulCarbon/myTest.git"
+    "url": "git+https://github.com/ColorfulCarbon/MyTest-Admin.git"
   },
   "author": "Carbon",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ColorfulCarbon/myTest/issues"
+    "url": "https://github.com/ColorfulCarbon/MyTest-Admin/issues"
   },
-  "homepage": "https://github.com/ColorfulCarbon/myTest#readme",
+  "homepage": "https://github.com/ColorfulCarbon/MyTest-Admin#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
     "cors": "^2.8.5",
